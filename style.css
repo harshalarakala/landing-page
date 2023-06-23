@@ -27,6 +27,8 @@ body{
     margin-right: 40px;
     align-items: center;
     transition: ease-in-out .3s;
+    text-decoration: underline;
+    text-decoration-color: red;
 }
 
 a:hover{
@@ -87,3 +89,35 @@ h3{
 .silhouette{
     opacity:40;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(254, 0, 0);
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+  }
+
+  #reserve{
+    background-color: red;
+    width: 250px;
+    height: 50px;
+    position: relative;
+    top: 50%;
+    left: 38.7%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder;
+    font-size: medium;
+    border-radius: 60px;
+    border-color: white;
+    color: white;
+  }
