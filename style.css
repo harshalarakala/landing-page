@@ -2,7 +2,6 @@ body{
     display: flex;
     flex-direction: column;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    height: 5000px;
     background-color: rgb(0, 0, 0);
     flex-wrap: wrap;
 }
@@ -20,10 +19,14 @@ body{
 }
 
 .footer{
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 100px;
+    font-weight: bolder;
+    color: white;
 }
 
 .tabs{
@@ -112,19 +115,22 @@ h3{
     border-radius: 10px;
 }
 
-#reserve{
+.reserve{
     background-color: red;
     width: 250px;
     height: 50px;
-    position: relative;
-    top: 50%;
-    left: 38.9%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: bolder;
     font-size: medium;
     border-radius: 60px;
     border-color: white;
     color: white;
+}
+
+.reserve.one{
+    position: relative;
+    top: 50%;
+    left: 38.9%;
 }
 
 .section-two{
@@ -140,6 +146,11 @@ h3{
 }
 
 .section-two:hover{
+    size-adjust: 110%;
+    transform: scale(1.035);
+}
+
+.action:hover{
     size-adjust: 110%;
     transform: scale(1.035);
 }
@@ -202,4 +213,54 @@ h3{
     display: flex;
     flex-direction: row;
     gap: 40px;
+}
+
+.section-three{
+    display: flex;
+    margin: 40px;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    gap: 40px;
+    padding: 30px;
+    border-radius: 30px;
+    transition: ease-out .3s;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.action{
+    display: flex;
+    margin: 40px;
+    background-color: rgb(0, 0, 0);
+    gap: 40px;
+    padding: 30px;
+    border-radius: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    transition: ease-out .3s;
+}
+
+h6{
+    color: white;
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.quote h6{
+    color: black;
+}
+
+p{
+    font-size: 28px;
+    text-align: right;
+    font-weight: 501px;
+}
+
+.reservation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 25px;
 }
